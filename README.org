@@ -14,7 +14,7 @@ until I finally do clock-in, then the nags will stop.
 ** How
 Put org-nag-clock.el somewhere on your loadpath and use the following to load it:
 #+BEGIN_SRC elisp
-  (require 'org-nag-clock')
+  (require 'org-nag-clock)
   (org-nag-clock-mode 1)
 #+END_SRC
 
@@ -24,7 +24,7 @@ Put org-nag-clock.el somewhere on your loadpath and use the following to load it
    ;; defaults to notify-send if available, falls back to Emacs built-in `message`
    org-nag-clock-notify-command "notify-send"
 
-   ;; Change the nag message
+   ;; change the nag message
    org-nag-clock-message "You're hacking, clock in!")
 
 #+END_SRC
