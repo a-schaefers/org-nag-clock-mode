@@ -30,19 +30,19 @@
 
 (defcustom org-nag-clock-grace-period 10
   "Seconds of emacs uptime before nag messages will be sent."
-  :group 'org-nag
+  :group 'org-nag-clock
   :type 'number)
 
 (defcustom org-nag-clock-message "Clock in to org-mode!"
   "Nag message for `org-nag-clock-router'"
-  :group 'org-nag
+  :group 'org-nag-clock
   :type 'string)
 
 (defcustom org-nag-clock-notify-command nil
   "Command to be used for notifications.
 Automatically set to \"notify-send\" if found on path and variable uncustomized.
 If nil it falls back to use Emacs built-in `message'"
-  :group 'org-nag
+  :group 'org-nag-clock
   :type 'string)
 
 ;; [if] `org-nag-clock-notify-command' is nil [and] notify-send is on path
@@ -73,7 +73,7 @@ and routes the notification."
 (define-minor-mode org-nag-clock-mode
   "Toggles Org Nag mode."
   :global t
-  :group 'org-nag
+  :group 'org-nag-clock
   (if (not org-nag-clock-mode)
       (remove-hook 'prog-mode-hook 'org-nag-clock-router)
     (progn
