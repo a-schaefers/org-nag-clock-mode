@@ -4,7 +4,7 @@
 Make Emacs remind (nag) you to clock-in to the org-mode timeclock
 
 ** Screenshot
-[[https://raw.githubusercontent.com/a-schaefers/org-nag-clock/master/screenshot.png]]
+[[https://raw.githubusercontent.com/a-schaefers/org-nag-clock-mode/master/screenshot.png]]
 
 ** Why
 I always forget to use the org-clock while programming--
