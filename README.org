@@ -4,9 +4,9 @@
 Make Emacs remind (nag) you to clock-in to the org-mode timeclock
 
 ** Why
-I always forget to clock programming work that I do with the org-mode clock--
-Now, if I forget to clock-in, then I will be nagged every time I open a prog-mode buffer
-until I finally do clock-in.
+I always forget to use the org-clock while programming--
+but now if I forget to clock-in, I will be nagged every time I open a prog-mode buffer--
+until I finally do clock-in, then the nags will stop.
 
 ** How
 Put org-nag-clock.el somewhere on your loadpath and use the following to load it:
