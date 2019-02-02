@@ -61,7 +61,6 @@ If nil it falls back to use Emacs built-in `message'"
       (message x)
     (start-process org-nag-clock-notify-command nil org-nag-clock-notify-command x)))
 
-;;;###autoload
 (defun org-nag-clock-router ()
   "`org-nag-clock' runs tests to see if a notification should be sent
 and routes the notification."
